@@ -5,19 +5,18 @@
     --text-color: #ffffff;
 }
 
-body, html {
-    /* height: 100%; */
-    background-color: #26242b;
-    font-family: 'Montserrat', sans-serif; /* Orig Segoe UI Symbol */
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-
-    /* Added smooth scrolling so that when using "bookmarks" it doesn't instantly teleport you */
-    scroll-behavior: smooth;
-    
+body, html {    
+     /* height: 100%; */
+     background-color: #00182b;
+     font-family: 'Montserrat', sans-serif; /* Orig Segoe UI Symbol */
+     height: 100vh;
+     width: 100%;
+     background-position: center;
+     background-repeat: repeat;
+     background-size: cover;
+ 
+     /* Added smooth scrolling so that when using "bookmarks" it doesn't instantly teleport you */
+     scroll-behavior: smooth;
 }
 
 /* Customizes the scrollbar */
@@ -75,6 +74,12 @@ nav {
     padding-top: 38vh;
     height: 100vh;
     line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
+    background-image: url('img/waves.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
 }
 
 .name {
