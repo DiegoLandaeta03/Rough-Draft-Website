@@ -74,12 +74,6 @@ nav {
     padding-top: 38vh;
     height: 100vh;
     line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
-    background-image: url('img/waves.jpg');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed
 }
 
 .name {
