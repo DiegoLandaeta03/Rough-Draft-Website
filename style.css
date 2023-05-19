@@ -1,0 +1,283 @@
+/* Creates color variables (accessed via: var(--main-color) etc.)*/
+:root{
+    /* --main-color: #29487D;
+    --side-color: #1DA1F2; */
+    --text-color: #ffffff;
+}
+
+body, html {
+    /* height: 100%; */
+    background-color: #26242b;
+    font-family: 'Montserrat', sans-serif; /* Orig Segoe UI Symbol */
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+    /* Added smooth scrolling so that when using "bookmarks" it doesn't instantly teleport you */
+    scroll-behavior: smooth;
+    
+}
+
+/* Customizes the scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Navigation Bar */
+
+nav {
+    font-family: 'Montserrat', sans-serif; /* Orig Segoe UI Symbol */
+    font-size: 18px;
+}
+
+.btn-sm {
+    font-size: 18px;
+}
+
+/* Transition effect when sliding down/up (FIXME)
+#navbar-hide {
+    transition: top 0.3s; 
+}
+*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--text-color);
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    padding-right: 16px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.275);
+}
+
+/* Body Text */
+
+#introduction {
+    padding-top: 38vh;
+    height: 100vh;
+    line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
+}
+
+.name {
+    font-size: 12vmin; /* Uses vmin to keep consistency (80px originally) (10vmin orig) */
+    color: var(--text-color);
+    padding-bottom: 0%; /* 0% */
+    margin-bottom: auto;
+}
+.background-text {
+    font-size: 5.6vmin; /* 50px (4.8vmin orig) */
+    color: var(--text-color);
+    padding-bottom: 0%;
+    margin: 0;
+}
+
+/* About Me Section */
+
+#about-me {
+    /* Changed 48vmin to 85px */
+    padding: 85px 12vmin 0vmin 12vmin; 
+    min-height: 100vmin;
+}
+
+#about-me h1 {
+    font-size: xxx-large;
+    color: var(--text-color);
+}
+
+#about-me p {
+    margin-bottom: 0%;
+}
+
+#about-me a { /* Part of aboutMe-link */
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+#about-me a:hover { /* Used for "popping" effect */
+    color: rgb(70, 170, 224);
+    text-decoration: none;
+    transform: scale(1.04);
+}
+
+.normal-text {
+    font-size: 1.1rem; /* 50px */
+    color: var(--text-color);
+    padding-bottom: 0%;
+}
+
+.about-circle { /* Puts a circle around my headshot */
+    height: 24vmax;
+    width: 24vmax;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.2);
+}
+
+.about-circle img { /* Styles/sizes the headshot */
+    height: 24vmax; /* Orig 28vmin */
+    width: auto;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.aboutMe-link { /* Adds a color and weight to links in About Me*/
+    color: rgb(70, 170, 224);
+    font-size: 1.2rem;
+    font-weight: 600 !important;
+}
+
+/* Creates spacing for the descriptions in the boxes */
+.card-spacing {
+    padding: 3.5vmin 3.5vmin 3.5vmin 3.5vmin;
+}
+
+
+/* Class for all the dark boxes that text goes in */
+.rounded-box {
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    
+    box-shadow: 4px 4px 12px 4px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+/* Creates light white shadow around box on hover */
+.rounded-box:hover {
+    box-shadow: 4px 8px 24px 4px rgba(255, 255, 255, 0.4);
+  }
+
+/* Experience Section */
+
+#experience {
+    padding-top: 85px; /* Changed 48vmin to 85px - 85px 12vmin 0vmin 12vmin */
+    min-height: 100vmin;
+}
+
+#experience h1 {
+    font-size: xxx-large;
+    color: var(--text-color);
+}
+
+#experience h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#experience p {
+    font-size: 1.1rem; /* 50px */
+    color: var(--text-color);
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+/* So that the images don't oversize (as they're more square) */
+#experience img {
+    height: auto;
+    width: 64%;
+}
+
+.box-image {
+    height: auto;
+    width: 100%;
+}
+
+/* Adds padding around element (image or text box) */
+.box-padding {
+    padding: 4vmin 2vmin 4vmin 2vmin;
+}
+
+/* Projects Section */
+
+#projects {
+    padding-top: 85px;
+    min-height: 100vmin;
+}
+
+#projects h1 {
+    font-size: xxx-large;
+    color: var(--text-color);
+}
+
+#projects h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#projects p {
+    font-size: 1.1rem; /* 50px */
+    color: var(--text-color);
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+/* So that the rounded boxes don't touch the sides of the screen */
+.side-margin {
+    margin: 0vmin 4.2vmin 0vmin 4.2vmin;
+}
+
+/* Goes after each rounded-box to create seperation/space */
+.bottom-space {
+    margin-bottom: 4vmin;
+}
+
+/* Contact Section (change to rem, %, or vh) */
+
+#contact-me {
+    padding-top: 10vmin;
+    font-size: 50px;
+    padding-bottom: 18px;
+}
+
+#contact-me h1 {
+    color: var(--text-color);
+}
+
+.social-spacing {
+    padding: 1vmin 1vmin 1vmin 1vmin;
+}
+
+/* .fa-instagram {
+    color:#DC25F4;
+} */
+
+.fa-linkedin {
+    color:#1C6FD0;
+}
+
+.fa-github {
+    color:#5f5c61;
+}
+
+/* .fa-instagram:hover {
+    color:#a8a8a8;
+} */
+
+.fa-linkedin:hover {
+    color:#a8a8a8;
+}
+
+.fa-github:hover {
+    color: #a8a8a8;
+}
