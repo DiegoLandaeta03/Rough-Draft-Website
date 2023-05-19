@@ -46,7 +46,7 @@
 
 			<!-- Logo now takes you to my name (Eliseo Garza) via bookmark -->
 			<a class="navbar-brand" href="#introduction">
-				<img src="assets/LogoV1.png" style= width:45px style= height:30px alt="Logo">
+				<img src="img/tam-logo.png" style= width:45px style= height:30px alt="Logo">
 			</a>
 
 			<!-- ml-auto creates margins on the left and pushes dropdown toggle to the far right -->
