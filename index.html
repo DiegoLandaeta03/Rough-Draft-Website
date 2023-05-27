@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Diego Landaeta Torres</title>
-
 	<!-- Importing bootstrap css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
@@ -39,38 +38,65 @@
 <body data-aos-delay="0">
 
 	<!--Navigation Bar-->
-	<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark" id="navbar-hide">
 
-		<!-- Creating a flex box that makes "flex items" -->
-		<div class="navbar-header d-flex col">
-
-			<!-- Logo now takes you to my name (Eliseo Garza) via bookmark -->
-			<a class="navbar-brand" href="#introduction">
-				<img src="img/tam-logo.png" style= width:45px style= height:30px alt="Logo">
-			</a>
-
-			<!-- ml-auto creates margins on the left and pushes dropdown toggle to the far right -->
-			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
+	<nav class="navbar">
+		<div id="trapezoid">
+		  <a class="sub-home" href="#">Home</a>
+		  <a href="#About" class="expandHome">About</a>
+		   <div class="subnav">
+		   <button class="subnavbtn">Clients<i class="fa fa-caret-down"></i></button>
+			 <div class="subnav-content">
+			  <div id="subnav-trapezoid">
+				<a href="#Clients">Burger King</a>
+				<a href="#Clients">Southwest Airlines</a>
+				<a href="#Clients">Levi Strauss</a>
+			  </div>
+			 </div>
+		  </div>
 		
-		
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
-
-				<!-- Update so href takes users to bookmarked location (FIXME) -->
-				<li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
-				<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-				<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-				<li class="nav-item"><a class="nav-link" href="#contact-me">Contact Me</a></li>
-			</ul>
-			
-			<!-- No longer part of list in nav bar, ml-auto pushes it to the right of the navbar, it's now also a button with an outline -->
-			<!-- UPDATE RESUME LINK (FIXME) -->
-			<a href="img/resume.pdf" class="ml-auto" target="_blank"><button type="button" class="btn btn-sm btn-outline-dark" style="color: #ffffff">Resume</button></a>
+		   <div class="subnav">
+		   <button class="subnavbtn">Services<i class="fa fa-caret-down"></i></button>
+			 <div class="subnav-content">
+			  <div class="subnav-trapezoid">
+				<a href="#Services">Print Design</a>
+				<a href="#Services">Web Design</a>
+				<a href="#Services">Mobile App Development</a>
+			   </div>
+			 </div>
+			</div>
+		  <a href="https://codepen.io/pec-man" class="expandHome">Contact</a>
 		</div>
-	</nav>
+	  </nav>
+	  <!--
+	<nav class="navbar">
+		<div id="trapezoid">
+		  <a class="sub-home" href="#">Home</a>
+		  <a href="#about-me" class="expandHome">About Me</a>
+		   <div class="subnav">
+		   <button class="subnavbtn">Experience<i class="fa fa-caret-down"></i></button>
+			 	<div class="subnav-content">
+					<div id="subnav-trapezoid">
+						<a href="#experience">Continuum Analytica</a>
+						<a href="#experience">SHPE</a>
+						<a href="#experience">Tennis Coach</a>
+					</div>
+				 </div>
+		  </div>
+		
+		   <div class="subnav">
+		   <button class="subnavbtn">Projects<i class="fa fa-caret-down"></i></button>
+				<div class="subnav-content">
+					<div class="subnav-trapezoid">
+						<a href="#projects">Personal Website</a>
+						<a href="#projects">Carcassonne</a>
+						<a href="#projects">Game of Dominoes</a>
+					</div>
+				</div>
+			</div>
+		  <a href="#contact-me" class="expandHome">Contact</a>
+		</div>
+
+	  </nav>
 
 	<!-- Introduction (name, A&M class, major), intro-content makes the original background image darker -->
 	<div class="container-fluid" id="introduction">
@@ -79,7 +105,7 @@
 		</div>
 		
 		<div class="row justify-content-center">
-			<div class="background-text">Texas A&M '26 | Computer Science</div>
+			<div class="background-text">Computer Science | Texas A&M 26'</div>
 		</div>
 	</div>
 	
@@ -107,7 +133,7 @@
 					<div class="card-spacing">
 
 						<!-- Added cool effects to parts of the "text" by using links and css -->
-						<p>I’m a sophomore majoring in Computer Science at 
+						<p>I am a sophomore majoring in Computer Science at 
 							<a href="https://engineering.tamu.edu/" target="_blank" class="aboutMe-link">Texas A&M University</a>	
 							.
 							I currently serve as a lead for the Technical Affairs Committee within 
@@ -115,7 +141,7 @@
 							. I am in charge of improving and maintaining the TAMU SHPE website as well as creating the personal website guide.
 						</p>
 						<br>
-						<p>I enjoy working playing basketball, going to the gym, or doing anything music related!</p>
+						<p>I enjoy playing basketball, going to the gym, or doing anything music related!</p>
 					</div>
 				</div>
 			</div>
@@ -245,7 +271,7 @@
 	<!-- Contact Me Section -->
 	<div class="container-fluid" id="contact-me">
 		<div class="row justify-content-center">
-			<h1>Contact Me</h1>
+			<h3>Contact Me</h3>
 		</div>
 
 
